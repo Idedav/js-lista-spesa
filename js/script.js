@@ -13,7 +13,7 @@ console.log(shoppingList);
 
 while (i < shoppingList.length){
     const article = shoppingList[i];
-    document.querySelector('ol').innerHTML = `<li>${article}</li>`
+    document.querySelector('ol').innerHTML += `<li>${article}</li>`
     i++
     console.log(article)
 }
