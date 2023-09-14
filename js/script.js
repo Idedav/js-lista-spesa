@@ -8,12 +8,13 @@ const shoppingList =[
     'Fagioli',
     'Shampoo',
 ]
-let counter = 0
-
+let i = 0
 console.log(shoppingList);
 
-while (counter < shoppingList.length){
-    const article = shoppingList[counter];
-    counter++
+while (i < shoppingList.length){
+    const article = shoppingList[i];
+    document.querySelector('ol').innerHTML = `<li>${article}</li>`
+    i++
     console.log(article)
 }
+console.log('---------FINE CICLO----------')
